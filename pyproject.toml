@@ -1,0 +1,32 @@
+[project]
+name = "comfyui-prompt-tag-manager"
+version = "2.0.0"
+description = "汐皮笑脸的提示词管理：三级词库随机 tag + 多路提示词整合 + 提示词历史面板"
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.comfy]
+PublisherId = "prompt-tag-manager"
+DisplayName = "汐皮笑脸的提示词管理（Prompt Tag + History）"
+Icon = "🏷"
+requires-comfyui = ">=0.3.0"
+web = "web"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = [
+    "nodes",
+    "prompt_builder",
+    "tag_store",
+    "routes",
+    "history_nodes",
+    "history_store",
+    "history_routes",
+    "prompt_extract",
+    "prompt_merge",
+]

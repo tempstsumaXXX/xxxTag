@@ -1,0 +1,96 @@
+{
+  "node": "PromptTagSelector",
+  "widgets": [
+    {
+      "name": "tag_config",
+      "type": "STRING",
+      "default": "",
+      "multiline": false,
+      "section": "required"
+    },
+    {
+      "name": "seed",
+      "type": "INT",
+      "default": 0,
+      "multiline": false,
+      "section": "optional"
+    },
+    {
+      "name": "separator",
+      "type": "STRING",
+      "default": ", ",
+      "multiline": false,
+      "section": "optional"
+    },
+    {
+      "name": "dedupe",
+      "type": "BOOLEAN",
+      "default": true,
+      "multiline": false,
+      "section": "optional"
+    },
+    {
+      "name": "underscore_to_space",
+      "type": "BOOLEAN",
+      "default": true,
+      "multiline": false,
+      "section": "optional"
+    },
+    {
+      "name": "weight_style",
+      "type": "COMBO",
+      "default": "不输出权重",
+      "section": "optional"
+    },
+    {
+      "name": "manual_mode",
+      "type": "COMBO",
+      "default": "两者结合（提示词框在前）",
+      "section": "optional"
+    },
+    {
+      "name": "manual_prompt",
+      "type": "STRING",
+      "default": "",
+      "multiline": true,
+      "section": "optional"
+    },
+    {
+      "name": "manual_space_as_sep",
+      "type": "BOOLEAN",
+      "default": false,
+      "multiline": false,
+      "section": "optional"
+    },
+    {
+      "name": "natural_prompt",
+      "type": "STRING",
+      "default": "",
+      "multiline": true,
+      "section": "optional"
+    },
+    {
+      "name": "natural_append",
+      "type": "BOOLEAN",
+      "default": false,
+      "multiline": false,
+      "section": "optional"
+    },
+    {
+      "name": "prompt_preview",
+      "type": "STRING",
+      "default": "",
+      "multiline": true,
+      "section": "optional"
+    }
+  ],
+  "return_types": [
+    "STRING",
+    "STRING"
+  ],
+  "return_names": [
+    "提示词",
+    "标签列表"
+  ],
+  "category": "提示词管理"
+}

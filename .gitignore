@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 运行时生成：用户词库 / 历史兜底目录（默认在 ComfyUI/user 下）
+user_tags/
+user/
+*.tmp
+
+# 前端调试残留
+.tmp_check/
+node_modules/
